@@ -14,7 +14,8 @@ This repository provides optimize Configs add-on for Jelastic Platform.
 
 ### What it can be used for?
 This Add-on will increase worker proccesses on nginx nodes and increase maxThreads and maxConnections values on tomcat nodes.
-Change config files on nginx&tomcat nodes (workers, connections amount, max threads amount)
+<br />
+Change config files on nginx&tomcat nodes (workers, connections amount, max threads amount).
 
 
 ### What Jelastic add-on is?
