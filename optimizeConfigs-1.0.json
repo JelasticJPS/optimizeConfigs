@@ -1,0 +1,62 @@
+{
+	"jpsType": "update",
+	"application": {
+		"id": "optimizeconf",
+		"name": "optimize Configs Add-on",
+		"version": "1.0",
+		"description": {
+			"text": "This Add-on will increase worker proccesses on nginx nodes and increase maxThreads and maxConnections values on tomcat nodes."
+		},
+		"targetNodes": {
+			"nodeType": [
+					"tomcat6",
+					"tomcat7",
+					"tomcat8",
+					"nginxphp",
+					"nginx"
+			]
+		},
+		"env": {
+			"onAfterChangeEngine": [{
+					"call": "optimizeingConfigs"
+				}
+			],
+			"onAfterCloneNodes": [{
+					"call": "optimizeingConfigs"
+				}
+			],
+			"onAfterAddNode": [{"id": "ametys",
+					"call": "optimizeingConfigs"
+				}
+			],
+			"onAfterSetCloudletCount": [{
+					"call": "optimizeingConfigs"
+				}
+			]
+		},
+		"onInstall": [{
+				"call": "optimizeingConfigs"
+			}
+		],
+		"procedures": [{
+				"id": "optimizeingConfigs",
+				"onCall": [{
+						"executeScript": {
+							"type": "javascript",
+							"script": "https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/scripts/tomcats.js"
+						}
+					}, {
+						"executeScript": {
+							"type": "javascript",
+							"script": "https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/scripts/scriptNginx.js"
+						}
+					}
+				]
+			}
+		],
+		"success": {
+			"text": "Optimizing Add-on successfully installed",
+			"email": "Optimizing Add-on successfully installed"
+		}
+	}
+}
