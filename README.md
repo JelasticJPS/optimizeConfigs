@@ -1,7 +1,6 @@
 # Jelastic optimize Configs Add-on
 
 This repository provides optimize Configs add-on for Jelastic Platform.
-[![GET IT HOSTED](https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/images/getithosted.png)](http://go.jelastic.com/test?hoster-select=1&theme=modern&app=https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/optimizeConfigs-1.0.json)
 
 **optimize Configs** is an add-on which will increase worker proccesses on nginx nodes and increase maxThreads and maxConnections values on tomcat nodes.
 
