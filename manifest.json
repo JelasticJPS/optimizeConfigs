@@ -43,12 +43,12 @@
 				"onCall": [{
 						"executeScript": {
 							"type": "javascript",
-							"script": "https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/scripts/tomcats.js"
+							"script": "https://raw.githubusercontent.com/jelastic-jps/optimizeConfigs/master/scripts/tomcats.js"
 						}
 					}, {
 						"executeScript": {
 							"type": "javascript",
-							"script": "https://raw.githubusercontent.com/JelasticJPS/optimizeConfigs/master/scripts/scriptNginx.js"
+							"script": "https://raw.githubusercontent.com/jelastic-jps/optimizeConfigs/master/scripts/scriptNginx.js"
 						}
 					}
 				]
