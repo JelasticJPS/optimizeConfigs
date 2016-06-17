@@ -67,7 +67,7 @@ function optimizeProcess() {
         oReadResp = toNative(oFileService.upload({
             "destPath": "/var/lib/jelastic/keys/installScript.sh",
             "nodeType": item.nodeType,
-            "sourcePath": "https://raw.githubusercontent.com/jelastic-jps/optimizeConfigs/master/scripts/script_prev.sh"
+            "sourcePath": "https://raw.githubusercontent.com/jelastic-jps/optimize-configs/master/scripts/script_prev.sh"
         }));
 */
         nRam = Math.floor(oResp.responses[0].out);
@@ -75,7 +75,7 @@ function optimizeProcess() {
         oReadResp = toNative(oFileService.upload({
             "destPath": "/var/lib/jelastic/keys/installScript.sh",
             "nodeType": item.nodeType,
-            "sourcePath": "https://raw.githubusercontent.com/jelastic-jps/optimizeConfigs/master/scripts/script.sh"
+            "sourcePath": "https://raw.githubusercontent.com/jelastic-jps/optimize-configs/master/scripts/script.sh"
         }));
 
 
