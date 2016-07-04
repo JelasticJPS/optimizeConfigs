@@ -4,6 +4,7 @@
 		"id": "optimizeconf",
 		"name": "optimize Configs Add-on",
 		"version": "1.0",
+		"logo": "https://raw.githubusercontent.com/jelastic-jps/optimize-configs/master/images/logo.png",
 		"description": {
 			"text": "This Add-on will increase worker proccesses on nginx nodes and increase maxThreads and maxConnections values on tomcat nodes."
 		},
